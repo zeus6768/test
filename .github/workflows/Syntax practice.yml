@@ -17,5 +17,5 @@ jobs:
     steps:
       - name: Run
         run: |
-          echo hi
+          echo hi \
           echo hello $FILE_NAME
