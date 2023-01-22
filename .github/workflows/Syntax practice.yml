@@ -1,0 +1,21 @@
+name: Syntax practice
+
+on: 
+  push: 
+    branches: [ main ]
+    
+env:
+  FILE_NAME: my-github-actions
+  
+permissions:
+  contents: read
+  
+jobs:
+  run_test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Run
+        run: |
+          echo hi,
+          echo hello
